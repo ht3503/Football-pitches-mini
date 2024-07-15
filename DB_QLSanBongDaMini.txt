@@ -1,0 +1,109 @@
+CREATE DATABASE QLSanBongDaMini
+GO
+
+USE QLSanBongDaMini
+GO
+
+CREATE TABLE Quyen (
+    MaQuyen CHAR(10) PRIMARY KEY,
+    TenQuyen NVARCHAR(50)
+);
+
+CREATE TABLE TaiKhoan (
+    MaTaiKhoan INT IDENTITY(1,1) PRIMARY KEY,
+    HoTen NVARCHAR(50),
+    Email CHAR(100) NULL,
+    SoDienThoai CHAR(20) UNIQUE,
+    MatKhau CHAR(50), 
+    BiKhoa bit,
+    MaQuyen CHAR(10),
+    FOREIGN KEY (MaQuyen) REFERENCES Quyen(MaQuyen)
+);
+
+CREATE TABLE LoaiSan (
+    MaLoaiSan CHAR(20) PRIMARY KEY,
+    TenLoaiSan NVARCHAR(50),
+    SoNguoiToiDa INT,
+    GiaTrenGio INT
+);
+
+CREATE TABLE San (
+    MaSan CHAR(20) PRIMARY KEY,
+    TenSan NVARCHAR(50),
+    DangSuaChua bit,
+    MaLoaiSan CHAR(20),
+    FOREIGN KEY (MaLoaiSan) REFERENCES LoaiSan(MaLoaiSan)
+);
+
+CREATE TABLE DatSan (
+    MaDatSan INT IDENTITY(1,1) PRIMARY KEY,
+    NgayDatSan DATE,
+    GioBatDau INT,
+    GioKetThuc INT,
+    HoTen NVARCHAR(200) NULL,
+    SDTLienLac CHAR(20) NULL,
+    TongTien INT,
+    DaThanhToan bit, 
+    DaHuy bit,
+    MaTaiKhoan INT,
+    MaSan CHAR(20),
+    FOREIGN KEY (MaTaiKhoan) REFERENCES TaiKhoan(MaTaiKhoan),
+    FOREIGN KEY (MaSan) REFERENCES San(MaSan)
+);
+
+CREATE TABLE ReportThongKe(
+    NgayThongKe DATE,
+    TongTienThuDuoc INT,
+    ChuaThanhToan INT,
+    SoLuongSanBai INT,
+    SoLuongDatSan INT,
+    SoLuongHuyDatSan INT,
+    SanDatNhieuNhat NVARCHAR(200)
+);
+
+INSERT INTO Quyen
+VALUES
+    ('staff', N'Quyền nhân viên'),
+    ('owner', N'Quyền quản lý');
+
+
+INSERT INTO TaiKhoan(HoTen, Email, SoDienThoai, MatKhau, BiKhoa, MaQuyen)
+VALUES
+    (N'Nguyễn Văn A','vana@gmail.com', '9876543210', '123456', 0,'staff'),
+    (N'Phạm Văn B'  ,'vanb@gmail.com'  , '0225251255', '111111', 0,'staff'),
+    (N'Vương Văn C' ,'vanc@gmail.com' , '5412525422', '222222', 0,'staff'),
+    (N'Lý Văn D'    ,'vand@gmail.com'    , '1111111111', '333333', 1,'staff'),
+    (N'Super Admin' ,'admin@gmail.com', '0123456789', '123456', 0,'owner');
+
+INSERT INTO LoaiSan
+VALUES
+    ('LS5', N'Sân 5 người', 10, 500000),
+    ('LS7', N'Sân 7 người', 14, 800000);
+
+INSERT INTO San
+VALUES
+    ('S01' ,N'Sân bóng 01', 0, 'LS5'),
+    ('S02' ,N'Sân bóng 02', 0, 'LS5'),
+    ('S03' ,N'Sân bóng 03', 1, 'LS7'),
+    ('S04' ,N'Sân bóng 04', 0, 'LS5'),
+    ('S05' ,N'Sân bóng 05', 1, 'LS7'),
+    ('S06' ,N'Sân bóng 06', 0, 'LS5'),
+    ('S07' ,N'Sân bóng 07', 0, 'LS5'),
+    ('S08' ,N'Sân bóng 08', 0, 'LS7'),
+    ('S09' ,N'Sân bóng 09', 0, 'LS5'),
+    ('S10' ,N'Sân bóng 10', 1, 'LS7');
+
+
+INSERT INTO DatSan(NgayDatSan, GioBatDau, GioKetThuc, HoTen, SDTLienLac, TongTien, DaThanhToan, DaHuy, MaTaiKhoan, MaSan)
+VALUES
+    ('2023-08-01', 16, 17, N'Nguyễn Văn A', '9876543210', 500000, 1, 0, 1,'S01'),
+    ('2023-08-02', 16, 17, N'Nguyễn Văn B', '5465175522', 500000, 1, 0, 1,'S01'),
+    ('2023-09-03', 16, 17, N'Nguyễn Văn C', '7851224282', 500000, 1, 0, 1,'S01'),
+    ('2023-09-04', 16, 17, N'Nguyễn Văn D', '1548185155', 500000, 0, 1, 2,'S02'),
+    ('2023-09-04', 16, 17, N'Nguyễn Văn E', '1681525155', 500000, 1, 1, 3,'S04'),
+    ('2023-09-06', 16, 17, N'Nguyễn Văn F', '5421288222', 500000, 0, 0, 3,'S04'),
+    ('2023-09-06', 18, 19, N'Nguyễn Văn G', '1584251585', 800000, 1, 0, 1,'S05'),
+    ('2023-09-06', 20, 21, N'Nguyễn Văn H', '8543258242', 800000, 1, 0, 1,'S05'),
+    ('2023-09-10', 16, 17, N'Nguyễn Văn E', '1681525155', 500000, 1, 1, 3,'S04'),
+    ('2023-09-11', 16, 17, N'Nguyễn Văn F', '5421288222', 500000, 0, 0, 3,'S04'),
+    ('2023-09-12', 18, 19, N'Nguyễn Văn G', '1584251585', 800000, 1, 0, 1,'S05');
