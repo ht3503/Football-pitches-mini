@@ -1,0 +1,27 @@
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.exe.config
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.exe
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.pdb
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.csprojResolveAssemblyReference.cache
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmMain.resources
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.Properties.Resources.resources
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.csproj.GenerateResource.Cache
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.exe
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.pdb
+E:\LuuDuLieuSinhVien\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmDangNhap.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.exe.config
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.exe
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.pdb
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.exe
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.pdb
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.csprojResolveAssemblyReference.cache
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmDangNhap.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmMain.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.Properties.Resources.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.csproj.GenerateResource.Cache
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmQLSanBai.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmQLTaiKhoan.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmThongKe.resources
+D:\HUIT\HK7\PhanMemThongMinh\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.frmQLDatSan.resources
+D:\MS.Word\New folder\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\bin\Debug\QLSanBongDaMini.exe.config
+D:\MS.Word\New folder\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.exe
+D:\MS.Word\New folder\QLSanBongDaMini\QLSanBongDaMini\QLSanBongDaMini\obj\Debug\QLSanBongDaMini.pdb
